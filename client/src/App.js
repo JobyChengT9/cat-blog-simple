@@ -21,7 +21,7 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/cat-blog-simple/",
+    path: "/cat-blog-simple",
     element: <Layout />,
     children: [
       {
