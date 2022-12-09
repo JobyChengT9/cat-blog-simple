@@ -25,11 +25,11 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/cat-blog-simple/",
+        path: "/",
         element: <Home />,
       },
       {
-        path: "/cat-blog-simple/post/:id",
+        path: "/post/:id",
         element: <Single />,
       },
     ],
