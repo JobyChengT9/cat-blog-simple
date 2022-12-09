@@ -21,15 +21,15 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/simple-cat-blog/",
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/simple-cat-blog/",
         element: <Home />,
       },
       {
-        path: "/post/:id",
+        path: "/simple-cat-blog/post/:id",
         element: <Single />,
       },
     ],
