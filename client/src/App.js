@@ -21,11 +21,11 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/cat-blog-simple",
+    path: "/",
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/cat-blog-simple",
         element: <Home />,
       },
       {
