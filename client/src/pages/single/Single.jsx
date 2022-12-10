@@ -29,9 +29,9 @@ const Single = () => {
   return (
     <div className="single">
       <div className="post">
-        <img src={`../../img/${post?.img}`} alt="cover" />
+        <img src={post?.img} alt="cover" />
         <div className="user">
-          {post.userImg && <img src={`../../img/${post.userImg}`} alt="icon" />}
+          {post.userImg && <img src={post.userImg} alt="icon" />}
           <div className="info">
             <span>{post.username}</span>
             <p>Posted {moment(post.date).fromNow()}</p>
