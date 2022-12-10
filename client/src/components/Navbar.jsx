@@ -10,14 +10,14 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <div className="container">
-          <Link className="logo" to="/">
+          <Link className="logo" to="/cat-blog-simple/">
             <img src={Logo} alt="logo" />
           </Link>
           <div className="catLinks">
             {topics.map((topic) => (
               <Link
                 className="link"
-                to={`/?cat=${topic}`}
+                to={`/cat-blog-simple/?cat=${topic}`}
                 key={topic}
                 style={{
                   backgroundImage: cat === topic ? `url(${Paw})` : "none",
