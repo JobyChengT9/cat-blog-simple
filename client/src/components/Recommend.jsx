@@ -34,7 +34,7 @@ const Recommend = ({ cat }) => {
         <div className="post" key={post.id}>
           <img src={post?.img} alt="" />
           <h2>{post.title}</h2>
-          <Link className="link" to={`/post/${post.id}`}>
+          <Link className="link" to={`/cat-blog-simple/post/${post.id}`}>
             <button>Read More</button>
           </Link>
         </div>
