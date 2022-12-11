@@ -31,7 +31,7 @@ const Single = () => {
       <div className="post">
         <img src={post?.img} alt="cover" />
         <div className="user">
-          {post.userImg && <img src={post.userImg} alt="icon" />}
+          <img src={post.userImg} alt="icon" />
           <div className="info">
             <span>{post.username}</span>
             <p>Posted {moment(post.date).fromNow()}</p>
