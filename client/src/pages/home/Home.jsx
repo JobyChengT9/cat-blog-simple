@@ -13,7 +13,8 @@ const Home = () => {
     const fetchData = async () => {
       try {
         if (cat === undefined) {
-          setPosts(db.reverse());
+          const data = db;
+          setPosts(data.reverse());
         } else {
           console.log("hi");
           const data = [];
