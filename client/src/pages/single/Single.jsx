@@ -34,11 +34,11 @@ const Single = () => {
           <img src={post?.userImg} alt="icon" />
           <div className="info">
             <span>{post?.username}</span>
-            <p>Posted {moment(post.date).fromNow()}</p>
+            <p>Posted {moment(post?.date).fromNow()}</p>
           </div>
         </div>
         
-        <h1>{post.title}</h1>
+        <h1>{post?.title}</h1>
 
         <div dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(post.desc),
