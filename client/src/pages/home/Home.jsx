@@ -14,16 +14,15 @@ const Home = () => {
       try {
         if (cat === undefined) {
           const data = db;
-          setPosts(data.reverse());
+          setPosts(data);
         } else {
-          console.log("hi");
           const data = [];
           for (let i = 0; i < db.length; i++) {
             if (db[i].cat === cat) {
               data.push(db[i]);
             }
           }
-          setPosts(data.reverse());
+          setPosts(data);
         }
       } catch (err) {
         console.log(err);
@@ -33,6 +32,8 @@ const Home = () => {
   }, [cat]);
 
   console.log(cat);
+  console.log(db);
+  console.log(posts);
  
   const getText = (html) => {
     const doc = new DOMParser().parseFromString(html, "text/html");
