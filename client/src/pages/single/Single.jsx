@@ -45,7 +45,7 @@ const Single = () => {
           }}
         />
       </div>
-      <Recommend cat={post.cat} />
+      <Recommend cat={post?.cat} />
     </div>
   );
 };
