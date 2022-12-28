@@ -75,13 +75,13 @@
         padding: 7.5px 15px;
         border: none;
         cursor: pointer;
-        color: lightblue;
+        color: rgb(140, 226, 255);
         background-color: white;
-        border: 1px solid lightblue;
+        border: 1px solid rgb(140, 226, 255);
 
         &:hover {
           border: 1px solid white;
-          background-color: lightblue;
+          background-color: rgb(140, 226, 255);
           color: black;
         }
       }
