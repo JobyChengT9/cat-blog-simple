@@ -1,10 +1,4 @@
-$lightGreen: #b9e7e7;
-
 .app {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // width: 1024px;
   max-width: 100%;
 
   .link {
@@ -13,7 +7,6 @@ $lightGreen: #b9e7e7;
   }
 
   //NAVBAR
-
   .navbar {
     width: 100%;
     position: sticky;
@@ -53,14 +46,15 @@ $lightGreen: #b9e7e7;
         }
       }
     }
+
     @media (max-width: 480px) {
       .container {
         flex-direction: column;
         padding: 10px;
         gap: 10px;
 
-        .catLinks h6{
-          font-size:medium;
+        .catLinks h6 {
+          font-size: medium;
         }
       }
     }
@@ -110,6 +104,7 @@ $lightGreen: #b9e7e7;
         color: #fff;
       }
     }
+    
     @media (max-width: 480px) {
       .shape {
         translate: 0 calc(5px + 7vh);

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../img/logo_black.png";
-import Paw from "../img/catpaw.png";
+import Paw from "../img/cat_paw.png";
 
 const Navbar = () => {
   const topics = ["SOCIAL", "HEALTH", "BEHAVIOUR", "ADOPTION"];
   const cat = useLocation().search.split("=")[1];
+
   return (
     <>
       <div className="navbar">

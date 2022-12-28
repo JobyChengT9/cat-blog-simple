@@ -3,18 +3,14 @@ import { useLocation } from "react-router-dom";
 import Recommend from "../../components/Recommend";
 import moment from "moment";
 import DOMPurify from "dompurify";
-import "./single.scss";
 import { db } from "../../db";
+import "./single.scss";
 
 const Single = () => {
-  console.log(db[0]);
-
   const [post, setPost] = useState([]);
-
   const location = useLocation();
-
   const postId = location.pathname.split("/")[3];
-  console.log(db[postId]);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -25,7 +21,6 @@ const Single = () => {
     };
     fetchData();
   }, [postId]);
-  console.log(post);
 
   return (
     <div className="single">
@@ -38,9 +33,7 @@ const Single = () => {
             <p>Posted {moment(post.date).fromNow()}</p>
           </div>
         </div>
-
         <h1>{post.title}</h1>
-
         <div
           dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(post.desc),

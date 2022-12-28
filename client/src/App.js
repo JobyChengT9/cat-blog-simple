@@ -1,13 +1,9 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Single from "./pages/single/Single";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import "./style.scss"
+import "./components.scss";
 
 const Layout = () => {
   return (
@@ -39,7 +35,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="app">
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </div>
   );
 }

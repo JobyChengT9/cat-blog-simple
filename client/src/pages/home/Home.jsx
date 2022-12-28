@@ -1,8 +1,8 @@
 import { React, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./home.scss";
 import moment from "moment";
 import { db } from "../../db";
+import "./home.scss";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -34,7 +34,7 @@ const Home = () => {
   console.log(cat);
   console.log(db);
   console.log(posts);
- 
+
   const getText = (html) => {
     const doc = new DOMParser().parseFromString(html, "text/html");
     return doc.body.textContent;

@@ -10,9 +10,9 @@ const Footer = () => {
       </div>
       <div className="content">
         <img src={Logo} alt="logo" />
-      <span>
-        Made with <b>cattitude</b> and <b>React.js</b>.
-      </span>
+        <span>
+          Made with <b>cattitude</b> and <b>React.js</b>.
+        </span>
       </div>
     </footer>
   );
