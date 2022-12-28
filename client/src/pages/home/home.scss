@@ -22,6 +22,26 @@
       color: white;
       text-align: center;
       margin-left: 15px;
+      animation: typewriter 3s steps(30) 1s 1 normal both,
+        blinkTextCursor 500ms infinite;
+    }
+
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 710px;
+      }
+    }
+
+    @keyframes blinkTextCursor {
+      from {
+        border-right-color: hsl(0, 0%, 80%);
+      }
+      to {
+        border-right-color: transparent;
+      }
     }
   }
 
