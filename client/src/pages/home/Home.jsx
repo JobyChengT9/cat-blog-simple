@@ -31,10 +31,6 @@ const Home = () => {
     fetchData();
   }, [cat]);
 
-  console.log(cat);
-  console.log(db);
-  console.log(posts);
-
   const getText = (html) => {
     const doc = new DOMParser().parseFromString(html, "text/html");
     return doc.body.textContent;

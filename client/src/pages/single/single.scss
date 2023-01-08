@@ -35,7 +35,7 @@
 
     h1 {
       font-size: 42px;
-      color: #333;
+      color: rgb(51, 51, 51);
     }
 
     p {
@@ -52,7 +52,7 @@
 
     h1 {
       font-size: 20px;
-      color: #555;
+      color: rgb(85, 85, 85);
     }
 
     .post {
@@ -67,7 +67,7 @@
       }
 
       h2 {
-        color: #555;
+        color: rgb(85, 85, 85);
       }
 
       button {
@@ -91,6 +91,7 @@
   @media (max-width: 480px) {
     flex-direction: column;
     margin: auto;
+
     .post {
       img {
         width: 100%;
@@ -99,8 +100,9 @@
 
       h1 {
         font-size: 30px;
-        color: #333;
+        color: rgb(51, 51, 51);
       }
+
       p {
         line-height: 25px;
       }
