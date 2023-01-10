@@ -1,0 +1,85 @@
+.write {
+  display: flex;
+  gap: 30px;
+  max-width: 80%;
+  margin: 30px auto;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 3;
+
+    .coverImg {
+      height: 250px;
+      border: 1px solid lightgrey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+
+      label {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: +1;
+        opacity: 0.2;
+        &:hover {
+          opacity: 1;
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid lightgray;
+      font-size: large;
+    }
+
+    .editorContainer {
+      height: 500px;
+      overflow: scroll;
+      border: 1px solid lightgray;
+
+      .editor {
+        height: 100%;
+        border: none;
+      }
+    }
+  }
+
+  .menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .category {
+      border: 1px solid lightgray;
+      padding: 20px;
+
+      h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .container .cat {
+        display: flex;
+        gap: 10px;
+        color: rgb(0, 70, 128);
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+
+    
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    max-width: 90%;
+  }
+}

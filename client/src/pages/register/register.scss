@@ -1,0 +1,103 @@
+.register {
+  height: 100vh;
+  background: url("../../img/register.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+
+    .left {
+      flex: 2;
+      margin: 10vw;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+
+      h1 {
+        font-size: 60px;
+      }
+
+      span {
+        font-size: 14px;
+      }
+    }
+
+    .right {
+      flex: 1;
+      margin: 10vw;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: #fff;
+
+      h1 {
+        color: #555;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
+        }
+
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: #6c4198c7;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    background-position: 23%;
+    justify-content: center;
+
+    .container {
+      flex-direction: column;
+      width: 80%;
+      gap: 20px;
+
+      .left {
+        flex: 1;
+        gap: 10px;
+        margin: auto;
+
+        h1 {
+          font-size: 40px;
+        }
+      }
+
+      .right {
+        margin: auto;
+        background-color: rgba(245, 245, 245, 0.8);
+
+        h1 {
+          color: #555;
+        }
+        form button {
+          background-color: #6d4198d6;
+        }
+      }
+    }
+  }
+}
