@@ -40,12 +40,14 @@ const Home = () => {
             <Link className="link post" to={`/post/${post.id}`}>
               <img src={`../upload/${post.img}`} alt="" />
               <div className="content">
-                <span>{post.cat}</span>
+                <div>
+                  <span style={{ fontSize: "18px" }}>{post.cat}</span>
+                  <span style={{ fontStyle: "italic" }}>
+                    Posted {moment(post.date).fromNow()}
+                  </span>
+                </div>
                 <h1>{post.title}</h1>
                 <p>{getText(post.desc)}</p>
-                <p style={{ fontSize: "10px" }}>
-                  Posted {moment(post.date).fromNow()}
-                </p>
               </div>
             </Link>
           </div>

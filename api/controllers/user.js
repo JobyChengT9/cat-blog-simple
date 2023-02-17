@@ -2,7 +2,6 @@ import { db } from "../db.js";
 import jwt from "jsonwebtoken";
 
 export const changeIcon = (req, res) => {
-  console.log("hi");
   const token = req.cookies.access_token;
   if (!token) return res.status(401).json("Not authenticated!");
 

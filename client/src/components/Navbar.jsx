@@ -8,7 +8,7 @@ import defaultIcon from "../img/cat_icon.jpg";
 import ClickAwayListener from "react-click-away-listener";
 
 const Navbar = () => {
-  const { currentUser, logout } = useContext(AuthContext);
+  const { currentUser, logout, update } = useContext(AuthContext);
   const [popup, setPopup] = useState(false);
   const [acc, setAcc] = useState(false);
   const [file, setFile] = useState(null);
@@ -38,7 +38,7 @@ const Navbar = () => {
         } catch (err) {
           console.log(err);
         }
-        logout();
+        await update({ username: currentUser.username });
       }
     };
 
@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
-        <Link className="logo" to="/">
+        <Link className={currentUser ? "logo" : "logo center"} to="/">
           <img src={Logo} alt="logo" />
         </Link>
         <div className="right">
