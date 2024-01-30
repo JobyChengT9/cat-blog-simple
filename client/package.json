@@ -1,4 +1,5 @@
-{ "homepage": "https://jobycheng.github.io/cat-blog-simple",
+{
+  "homepage": "https://jobycheng.github.io/cat-blog-simple",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +10,7 @@
     "axios": "^0.27.2",
     "dompurify": "^2.4.0",
     "moment": "^2.29.4",
+    "qr-scanner": "^1.4.2",
     "react": "^18.0.0",
     "react-click-away-listener": "^2.2.2",
     "react-dom": "^18.0.0",
@@ -20,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
