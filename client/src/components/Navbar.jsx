@@ -21,12 +21,15 @@ const Navbar = () => {
                 to={`/cat-blog-simple/?cat=${topic}`}
                 key={topic}
                 style={{
-                  backgroundImage: cat === topic ? `url(${Paw})` : "none",
+                  backgroundImage: cat === topic ? `url(${Paw})` : "none"
                 }}
               >
                 <h6>{topic}</h6>
               </Link>
             ))}
+            <Link className="link" to={`/cat-blog-simple/scan`} key={"SCAN"}>
+              <h6>SCAN</h6>
+            </Link>
           </div>
         </div>
       </div>

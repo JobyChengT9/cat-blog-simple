@@ -5,7 +5,9 @@ import QrReader from "../../QrCode/QRScanner";
 
 const Scan = () => {
   return (
-    <QrReader />
+    <div>
+      <QrReader />
+    </div>
   )
 }
 
